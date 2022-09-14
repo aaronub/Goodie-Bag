@@ -21,7 +21,7 @@ const candies = [{
   quantity: 4,
   imageUrl: 'https://images.heb.com/is/image/HEBGrocery/000121396'
 }];
-
+ 
 const seed = async () => {
   try {
     await db.sync({force: true})

@@ -13,7 +13,6 @@ const getCandies = (candies) => ({
 export const _getCandies = () => {
     return async (dispatch) => {
       const { data } = await axios.get('/api/candies');
-    //   console.log('data:', data)
       dispatch(getCandies(data));
     };
 };

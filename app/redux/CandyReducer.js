@@ -28,12 +28,9 @@ export const increaseQuantity = (id) => {
     return async (dispatch) => {
         // also {data} ??????????????
       const { data } = await axios.put(`/api/candies/${id}/increase`);
-      console.log('data:', data)
       dispatch(updateQuantity(data));
     };
 };
-
-
 
 const initState = {}
 // reducer function 

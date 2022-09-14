@@ -11,7 +11,7 @@ const Root = () => {
       <nav >Goodie Bag</nav>
       <Nav/>
       <main>
-        <h1 style={{color:'red'}}>Welcome to the Goodie Bag!</h1>
+        <h1 style={{color:'red'}}>Welcome to the Goodie Bag!!!</h1>
         <p>What a nice home page for your goodies!</p>
       </main>
       <Routes>

@@ -40,11 +40,13 @@ router.get('/candies/:id', async(req, res) => {
 }) 
 
 //PUT api/candies/:id/increase
+//increase number needs a seperate API router!!!!!!!!!!!!!!!!
 router.put('/candies/:id/increase', async(req, res) => {
   try {
     const candy = await Candy.findByPk(req.params.id);
     candy.quantity++
-    //?????????????????????
+    //Before Router.put, we supposed to use candy.update(req.body) to update the database, but here just 
+    //candy.quantity ++, I think thats why we need await candy.save(), its like .update!!!!
     await candy.save()
     res.send(candy) 
   } catch (error) {
