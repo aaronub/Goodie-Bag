@@ -6,6 +6,7 @@ const Nav = () => {
         <nav >
             <Link style={{color:'red'}} to={'/candies'} >All-Candies!</Link>
             <Link style={{color:'red'}} to={'/'}>Home!</Link>
+            <Link style={{color:'red'}} to={'/candies/charts'}>See Charts!</Link>
         </nav>
     )
 }

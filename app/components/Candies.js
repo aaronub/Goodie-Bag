@@ -15,7 +15,7 @@ function Candies(){
      }, []);
 
     const candies = useSelector(state => state.candies)
-     console.log('hiiiii')
+
     return (
         <div>
             {candies.map((itm,idx) => (
